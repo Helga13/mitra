@@ -1,0 +1,16 @@
+{
+  "name": "helga13",
+  "version": "1.0.1",
+  "description": "gulp template",
+  "authors": [
+    ""
+  ],
+  "moduleType": [
+    "globals"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "2.*",
+    "normalize.css": "*"
+  }
+}

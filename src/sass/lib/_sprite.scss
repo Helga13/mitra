@@ -1,0 +1,238 @@
+/*
+  SASS variables are information about icon's compiled state, stored under its original file name
+
+  .icon-home
+    width: $icon-home-width
+
+  The large array-like variables contain all information about a single icon
+  $icon-home: x y offset_x offset_y width height total_width total_height image_path
+
+  At the bottom of this section, we provide information about the spritesheet itself
+  $spritesheet: width height image $spritesheet-sprites
+  */
+$i_arr-name: 'i_arr'
+$i_arr-x: 60px
+$i_arr-y: 32px
+$i_arr-offset-x: -60px
+$i_arr-offset-y: -32px
+$i_arr-width: 6px
+$i_arr-height: 10px
+$i_arr-total-width: 69px
+$i_arr-total-height: 64px
+$i_arr-image: 'sprite.png'
+$i_arr: 60px 32px -60px -32px 6px 10px 69px 64px 'sprite.png' 'i_arr'
+$i_download-name: 'i_download'
+$i_download-x: 50px
+$i_download-y: 40px
+$i_download-offset-x: -50px
+$i_download-offset-y: -40px
+$i_download-width: 10px
+$i_download-height: 10px
+$i_download-total-width: 69px
+$i_download-total-height: 64px
+$i_download-image: 'sprite.png'
+$i_download: 50px 40px -50px -40px 10px 10px 69px 64px 'sprite.png' 'i_download'
+$i_earth-name: 'i_earth'
+$i_earth-x: 46px
+$i_earth-y: 0px
+$i_earth-offset-x: -46px
+$i_earth-offset-y: 0px
+$i_earth-width: 14px
+$i_earth-height: 14px
+$i_earth-total-width: 69px
+$i_earth-total-height: 64px
+$i_earth-image: 'sprite.png'
+$i_earth: 46px 0px -46px 0px 14px 14px 69px 64px 'sprite.png' 'i_earth'
+$i_location-name: 'i_location'
+$i_location-x: 14px
+$i_location-y: 40px
+$i_location-offset-x: -14px
+$i_location-offset-y: -40px
+$i_location-width: 12px
+$i_location-height: 14px
+$i_location-total-width: 69px
+$i_location-total-height: 64px
+$i_location-image: 'sprite.png'
+$i_location: 14px 40px -14px -40px 12px 14px 69px 64px 'sprite.png' 'i_location'
+$i_mail-small-name: 'i_mail-small'
+$i_mail-small-x: 0px
+$i_mail-small-y: 54px
+$i_mail-small-offset-x: 0px
+$i_mail-small-offset-y: -54px
+$i_mail-small-width: 14px
+$i_mail-small-height: 10px
+$i_mail-small-total-width: 69px
+$i_mail-small-total-height: 64px
+$i_mail-small-image: 'sprite.png'
+$i_mail-small: 0px 54px 0px -54px 14px 10px 69px 64px 'sprite.png' 'i_mail-small'
+$i_mail-white-name: 'i_mail-white'
+$i_mail-white-x: 46px
+$i_mail-white-y: 28px
+$i_mail-white-offset-x: -46px
+$i_mail-white-offset-y: -28px
+$i_mail-white-width: 14px
+$i_mail-white-height: 10px
+$i_mail-white-total-width: 69px
+$i_mail-white-total-height: 64px
+$i_mail-white-image: 'sprite.png'
+$i_mail-white: 46px 28px -46px -28px 14px 10px 69px 64px 'sprite.png' 'i_mail-white'
+$i_mail-name: 'i_mail'
+$i_mail-x: 26px
+$i_mail-y: 20px
+$i_mail-offset-x: -26px
+$i_mail-offset-y: -20px
+$i_mail-width: 20px
+$i_mail-height: 16px
+$i_mail-total-width: 69px
+$i_mail-total-height: 64px
+$i_mail-image: 'sprite.png'
+$i_mail: 26px 20px -26px -20px 20px 16px 69px 64px 'sprite.png' 'i_mail'
+$i_map-name: 'i_map'
+$i_map-x: 0px
+$i_map-y: 0px
+$i_map-offset-x: 0px
+$i_map-offset-y: 0px
+$i_map-width: 26px
+$i_map-height: 40px
+$i_map-total-width: 69px
+$i_map-total-height: 64px
+$i_map-image: 'sprite.png'
+$i_map: 0px 0px 0px 0px 26px 40px 69px 64px 'sprite.png' 'i_map'
+$i_message-white-name: 'i_message-white'
+$i_message-white-x: 0px
+$i_message-white-y: 40px
+$i_message-white-offset-x: 0px
+$i_message-white-offset-y: -40px
+$i_message-white-width: 14px
+$i_message-white-height: 14px
+$i_message-white-total-width: 69px
+$i_message-white-total-height: 64px
+$i_message-white-image: 'sprite.png'
+$i_message-white: 0px 40px 0px -40px 14px 14px 69px 64px 'sprite.png' 'i_message-white'
+$i_next-name: 'i_next'
+$i_next-x: 60px
+$i_next-y: 0px
+$i_next-offset-x: -60px
+$i_next-offset-y: 0px
+$i_next-width: 9px
+$i_next-height: 16px
+$i_next-total-width: 69px
+$i_next-total-height: 64px
+$i_next-image: 'sprite.png'
+$i_next: 60px 0px -60px 0px 9px 16px 69px 64px 'sprite.png' 'i_next'
+$i_person-white-name: 'i_person-white'
+$i_person-white-x: 38px
+$i_person-white-y: 40px
+$i_person-white-offset-x: -38px
+$i_person-white-offset-y: -40px
+$i_person-white-width: 12px
+$i_person-white-height: 14px
+$i_person-white-total-width: 69px
+$i_person-white-total-height: 64px
+$i_person-white-image: 'sprite.png'
+$i_person-white: 38px 40px -38px -40px 12px 14px 69px 64px 'sprite.png' 'i_person-white'
+$i_phone-small-name: 'i_phone-small'
+$i_phone-small-x: 46px
+$i_phone-small-y: 14px
+$i_phone-small-offset-x: -46px
+$i_phone-small-offset-y: -14px
+$i_phone-small-width: 14px
+$i_phone-small-height: 14px
+$i_phone-small-total-width: 69px
+$i_phone-small-total-height: 64px
+$i_phone-small-image: 'sprite.png'
+$i_phone-small: 46px 14px -46px -14px 14px 14px 69px 64px 'sprite.png' 'i_phone-small'
+$i_phone-name: 'i_phone'
+$i_phone-x: 26px
+$i_phone-y: 0px
+$i_phone-offset-x: -26px
+$i_phone-offset-y: 0px
+$i_phone-width: 20px
+$i_phone-height: 20px
+$i_phone-total-width: 69px
+$i_phone-total-height: 64px
+$i_phone-image: 'sprite.png'
+$i_phone: 26px 0px -26px 0px 20px 20px 69px 64px 'sprite.png' 'i_phone'
+$i_placeholder-name: 'i_placeholder'
+$i_placeholder-x: 26px
+$i_placeholder-y: 40px
+$i_placeholder-offset-x: -26px
+$i_placeholder-offset-y: -40px
+$i_placeholder-width: 12px
+$i_placeholder-height: 14px
+$i_placeholder-total-width: 69px
+$i_placeholder-total-height: 64px
+$i_placeholder-image: 'sprite.png'
+$i_placeholder: 26px 40px -26px -40px 12px 14px 69px 64px 'sprite.png' 'i_placeholder'
+$i_prev-name: 'i_prev'
+$i_prev-x: 60px
+$i_prev-y: 16px
+$i_prev-offset-x: -60px
+$i_prev-offset-y: -16px
+$i_prev-width: 9px
+$i_prev-height: 16px
+$i_prev-total-width: 69px
+$i_prev-total-height: 64px
+$i_prev-image: 'sprite.png'
+$i_prev: 60px 16px -60px -16px 9px 16px 69px 64px 'sprite.png' 'i_prev'
+$spritesheet-width: 69px
+$spritesheet-height: 64px
+$spritesheet-image: 'sprite.png'
+$spritesheet-sprites: $i_arr $i_download $i_earth $i_location $i_mail-small $i_mail-white $i_mail $i_map $i_message-white $i_next $i_person-white $i_phone-small $i_phone $i_placeholder $i_prev
+$spritesheet: 69px 64px 'sprite.png' $spritesheet-sprites
+
+/*
+  The provided mixins are intended to be used with the array-like variables
+
+  .icon-home
+    @include sprite-width($icon-home)
+
+  .icon-email
+    @include sprite($icon-email)
+  */
+@mixin sprite-width($sprite)
+  width: nth($sprite, 5)
+@mixin spriter-width($sprite)
+  width: nth($sprite, 5)/2
+@mixin sprite-height($sprite)
+  height: nth($sprite, 6)
+@mixin spriter-height($sprite)
+  height: nth($sprite, 6)/2
+@mixin sprite-position($sprite)
+  $sprite-offset-x: nth($sprite, 3)
+  $sprite-offset-y: nth($sprite, 4)
+  background-position: $sprite-offset-x  $sprite-offset-y
+@mixin spriter-position($sprite)
+  $sprite-offset-x: nth($sprite, 3)/2
+  $sprite-offset-y: nth($sprite, 4)/2
+  background-position: $sprite-offset-x  $sprite-offset-y
+@mixin sprite-image($sprite)
+  $sprite-image: nth($sprite, 9)
+  background-image: url(../img/#{$sprite-image})
+
+@mixin sprite($sprite)
+  @include sprite-image($sprite)
+  @include sprite-position($sprite)
+  @include sprite-width($sprite)
+  @include sprite-height($sprite)
+@mixin spriter($sprite)
+  @include sprite-image($sprite)
+  @include sprite-position($sprite)
+  @include sprite-width($sprite)
+  @include sprite-height($sprite)
+/*
+  The `sprites` mixin generates identical output to the CSS template
+    but can be overridden inside of SASS
+
+  @include sprites($spritesheet-sprites)
+  */
+@mixin sprites($sprites)
+  @each $sprite in $sprites
+    $sprite-name: nth($sprite, 10)
+    .#{$sprite-name}
+      @include sprite($sprite)
+@mixin spritesr($sprites)
+  @each $sprite in $sprites
+    $sprite-name: nth($sprite, 10)
+    .#{$sprite-name}
+      @include spriter($sprite)

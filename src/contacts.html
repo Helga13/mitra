@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+//= includes/head.html
+
+<body>
+//= includes/header.html
+<main class="inner text contact_page">
+  <div class="wrap">
+    <ul class="breadcrumb">
+      <li><a href="/">Главная</a></li>
+      <li>Контакты</li>
+    </ul>
+    <h1>Контакты</h1>
+    <div class="marker_block">
+      <div class="maps pin1" data-longitude="53.916652" data-latitude="27.455138">
+        <div class="marker_popup">
+          <div class="tip_title">Склад 1</div>
+          <div class="tip_address">220140, Республика Беларусь, г. Минск, ул. Матусевича, 35/1-3</div>
+        </div>
+      </div>
+      <div class="maps pin2" data-longitude="53.871037" data-latitude="27.413492">
+        <div class="marker_popup">
+          <div class="tip_title">Склад 2</div>
+          <div class="tip_address">Ул. Монтажников 7, г.Минск, Беларусь</div>
+        </div>
+      </div>
+    </div>
+    <div id="map"></div>
+    <div class="contacts_block">
+      <div class="contacts_item">
+        <h2>Адреса</h2>
+        <div class="heading">Юридический адрес ООО «МИТРА»</div>
+        <div class="point location">Ул. Матусевича 35/1, 220140, г.Минск, Беларусь</div>
+        <div class="heading">Почтовый адрес ООО «МИТРА»</div>
+        <div class="point location">Ул. Матусевича 35/1, 220140, г.Минск, Беларусь</div>
+        <div class="heading">Склад 1</div>
+        <div class="point location">Ул. Матусевича 35/1, г.Минск, Беларусь</div>
+        <div class="heading">Склад 2</div>
+        <div class="point location">Ул. Монтажников 7, г.Минск, Беларусь</div>
+      </div>
+      <div class="contacts_item">
+        <h2>Контактная информация</h2>
+        <div class="heading">Отдел продаж</div>
+        <div><a href="tel:+375172014850" class="point phone">+375 (17) 201-48-50</a></div>
+        <div><a href="tel:+375172014850" class="point phone">+375 (17) 201-48-52</a></div>
+        <div><a href="mailto:info@mitra.by" class="point mail"><span>info@mitra.by</span></a></div>
+        <div class="heading">Бухгалтерия</div>
+        <div><a href="tel:+375173650147" class="point phone">+375 (17) 365-01-47</a></div>
+        <div class="heading">Отдел кадровой и юридической работы </div>
+        <div><a href="tel:+375172014857" class="point phone">+375 (17) 201-48-57</a></div>
+        <div><a href="mailto:personal@mitra.by" class="point mail"><span>personal@mitra.by</span></a></div>
+      </div>
+      <div class="contacts_item">
+        <h2>Представитель в россии</h2>
+        <div class="heading">Компания “Мириста”</div>
+        <div><a href="http://www.mirista.ru" class="point site"><span>www.mirista.ru</span></a></div>
+        <div class="point location">127247, Россия, г. Москва, Дмитровское ш., 60, Бизнес-центр "СЕЛИГЕР", оф. 328 </div>
+        <div><a href="tel:+74951090580" class="point phone">тел./факс: +7 495 109 05 80</a></div>
+        <div><a href="tel:+79067835580" class="point phone">моб.: +7 906 783 55 80</a></div>
+        <div><a href="mailto:nmitra@mail.ru" class="point mail"><span>nmitra@mail.ru</span></a></div>
+        <div><a href="mailto:info-mitra@mail.ru" class="point mail"><span>info-mitra@mail.ru</span></a></div>
+      </div>
+    </div>
+  </div>
+  <div class="feedback_block">
+    <div class="wrap">
+      <div class="title">Обратная связь</div>
+      <form action="/" method="post">
+        <div class="field_block">
+          <div class="field">
+            <label for="f_name"><img src="img/icons/i_person-white.png" alt="Имя">Имя</label>
+            <input type="text" id="f_name" name="NAME" required>
+          </div>
+          <div class="field">
+            <label for="f_mail"><img src="img/icons/i_mail-white.png" alt="Эл. Почта">Эл. Почта</label>
+            <input type="email" id="f_mail" name="MAIL" required>
+          </div>
+        </div>
+        <div class="field">
+          <label for="f_message"><img src="img/icons/i_message-white.png" alt="Сообщение">Сообщение</label>
+          <textarea name="MESSAGE" id="f_message" placeholder="Введите текст сообщения..."></textarea>
+        </div>
+        <button type="submit" class="btn submit">Отправить письмо</button>
+      </form>
+    </div>
+  </div>
+</main>
+//= includes/footer.html
+//= includes/scripts.html
+</body>
+</html>
