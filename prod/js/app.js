@@ -19,6 +19,19 @@ $(document).ready(function () {
     placeholder: 'Выберите материал'
   }).val('').trigger('change');
   
+  $('.js-size').select2({
+    tags: true,
+    minimumResultsForSearch: Infinity,
+    placeholder: 'Выберите стандарт горла',
+    maximumSelectionLength: 5,
+    createSearchChoice : function(term){
+      return false;
+    }
+  });
+  $('.js-size').on('select2:open', function (e) {
+    $('.select2-search input').prop('focus',false);
+  });
+  
   $('select').on('select2:open', function(e){
     $('.select2-results__options').scrollbar().parent().addClass('scrollbar-inner');
   });
@@ -28,9 +41,9 @@ $(document).ready(function () {
   $('.js-news').slick({
     arrows: false,
     dots: true,
-//    infinite: true,
-//    autoplay: true,
-//    autoplaySpeed: 4000  
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 4000,
     appendDots: $('.news_dots')
   });
   
