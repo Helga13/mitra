@@ -36,6 +36,10 @@ $(document).ready(function () {
     $('.select2-results__options').scrollbar().parent().addClass('scrollbar-inner');
   });
   
+  $('.js-size').on('select2:open', function(e){
+    $('.select2-results__options').addClass('dropdown-checkbox');
+  });
+  
   // slider
   
   $('.js-news').slick({

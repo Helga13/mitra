@@ -69,6 +69,7 @@
       </div>
       <div class="filters">
         <div class="field">
+          <div class="label">Стандарт горла</div>
           <select class="size_choice js-size" multiple="multiple">
             <option>18/415</option>
             <option>20/415</option>
@@ -78,8 +79,14 @@
             <option>24/415</option>
           </select>
         </div>
-        <div class="field">
-          
+        <div class="field price_range">
+          <div class="label">Объем, мл</div>
+          <label for="price_from" class="price_from"><span>от</span><input type="text" id="price_from"></label>
+          <label for="price_to" class="price_to"><span>до</span><input type="text" id="price_to"></label>
+        </div>
+        <div class="button_block">
+          <a href="#" class="disable reset">сбросить</a>
+          <button type="submit" class="btn">Подобрать</button>
         </div>
       </div>
     </div>
