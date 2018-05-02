@@ -99,7 +99,9 @@ $(document).ready(function () {
     
   }); 
   
-  
+  $('.js-disable').on('click', function(e){
+    e.preventDefault();
+  });
 
   
 })
