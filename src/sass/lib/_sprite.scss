@@ -11,93 +11,93 @@
   $spritesheet: width height image $spritesheet-sprites
   */
 $i_arr-name: 'i_arr'
-$i_arr-x: 69px
-$i_arr-y: 0px
-$i_arr-offset-x: -69px
-$i_arr-offset-y: 0px
+$i_arr-x: 76px
+$i_arr-y: 52px
+$i_arr-offset-x: -76px
+$i_arr-offset-y: -52px
 $i_arr-width: 6px
 $i_arr-height: 10px
-$i_arr-total-width: 75px
-$i_arr-total-height: 64px
+$i_arr-total-width: 85px
+$i_arr-total-height: 68px
 $i_arr-image: 'sprite.png'
-$i_arr: 69px 0px -69px 0px 6px 10px 75px 64px 'sprite.png' 'i_arr'
+$i_arr: 76px 52px -76px -52px 6px 10px 85px 68px 'sprite.png' 'i_arr'
 $i_check-name: 'i_check'
-$i_check-x: 14px
+$i_check-x: 12px
 $i_check-y: 54px
-$i_check-offset-x: -14px
+$i_check-offset-x: -12px
 $i_check-offset-y: -54px
 $i_check-width: 10px
 $i_check-height: 7px
-$i_check-total-width: 75px
-$i_check-total-height: 64px
+$i_check-total-width: 85px
+$i_check-total-height: 68px
 $i_check-image: 'sprite.png'
-$i_check: 14px 54px -14px -54px 10px 7px 75px 64px 'sprite.png' 'i_check'
+$i_check: 12px 54px -12px -54px 10px 7px 85px 68px 'sprite.png' 'i_check'
 $i_download-name: 'i_download'
-$i_download-x: 50px
+$i_download-x: 66px
 $i_download-y: 40px
-$i_download-offset-x: -50px
+$i_download-offset-x: -66px
 $i_download-offset-y: -40px
 $i_download-width: 10px
 $i_download-height: 10px
-$i_download-total-width: 75px
-$i_download-total-height: 64px
+$i_download-total-width: 85px
+$i_download-total-height: 68px
 $i_download-image: 'sprite.png'
-$i_download: 50px 40px -50px -40px 10px 10px 75px 64px 'sprite.png' 'i_download'
+$i_download: 66px 40px -66px -40px 10px 10px 85px 68px 'sprite.png' 'i_download'
 $i_earth-name: 'i_earth'
-$i_earth-x: 46px
-$i_earth-y: 14px
-$i_earth-offset-x: -46px
-$i_earth-offset-y: -14px
+$i_earth-x: 28px
+$i_earth-y: 40px
+$i_earth-offset-x: -28px
+$i_earth-offset-y: -40px
 $i_earth-width: 14px
 $i_earth-height: 14px
-$i_earth-total-width: 75px
-$i_earth-total-height: 64px
+$i_earth-total-width: 85px
+$i_earth-total-height: 68px
 $i_earth-image: 'sprite.png'
-$i_earth: 46px 14px -46px -14px 14px 14px 75px 64px 'sprite.png' 'i_earth'
+$i_earth: 28px 40px -28px -40px 14px 14px 85px 68px 'sprite.png' 'i_earth'
 $i_location-name: 'i_location'
-$i_location-x: 26px
+$i_location-x: 42px
 $i_location-y: 40px
-$i_location-offset-x: -26px
+$i_location-offset-x: -42px
 $i_location-offset-y: -40px
 $i_location-width: 12px
 $i_location-height: 14px
-$i_location-total-width: 75px
-$i_location-total-height: 64px
+$i_location-total-width: 85px
+$i_location-total-height: 68px
 $i_location-image: 'sprite.png'
-$i_location: 26px 40px -26px -40px 12px 14px 75px 64px 'sprite.png' 'i_location'
+$i_location: 42px 40px -42px -40px 12px 14px 85px 68px 'sprite.png' 'i_location'
 $i_mail-small-name: 'i_mail-small'
-$i_mail-small-x: 0px
-$i_mail-small-y: 54px
-$i_mail-small-offset-x: 0px
-$i_mail-small-offset-y: -54px
+$i_mail-small-x: 40px
+$i_mail-small-y: 30px
+$i_mail-small-offset-x: -40px
+$i_mail-small-offset-y: -30px
 $i_mail-small-width: 14px
 $i_mail-small-height: 10px
-$i_mail-small-total-width: 75px
-$i_mail-small-total-height: 64px
+$i_mail-small-total-width: 85px
+$i_mail-small-total-height: 68px
 $i_mail-small-image: 'sprite.png'
-$i_mail-small: 0px 54px 0px -54px 14px 10px 75px 64px 'sprite.png' 'i_mail-small'
+$i_mail-small: 40px 30px -40px -30px 14px 10px 85px 68px 'sprite.png' 'i_mail-small'
 $i_mail-white-name: 'i_mail-white'
-$i_mail-white-x: 46px
-$i_mail-white-y: 28px
-$i_mail-white-offset-x: -46px
-$i_mail-white-offset-y: -28px
+$i_mail-white-x: 26px
+$i_mail-white-y: 30px
+$i_mail-white-offset-x: -26px
+$i_mail-white-offset-y: -30px
 $i_mail-white-width: 14px
 $i_mail-white-height: 10px
-$i_mail-white-total-width: 75px
-$i_mail-white-total-height: 64px
+$i_mail-white-total-width: 85px
+$i_mail-white-total-height: 68px
 $i_mail-white-image: 'sprite.png'
-$i_mail-white: 46px 28px -46px -28px 14px 10px 75px 64px 'sprite.png' 'i_mail-white'
+$i_mail-white: 26px 30px -26px -30px 14px 10px 85px 68px 'sprite.png' 'i_mail-white'
 $i_mail-name: 'i_mail'
-$i_mail-x: 26px
+$i_mail-x: 56px
 $i_mail-y: 20px
-$i_mail-offset-x: -26px
+$i_mail-offset-x: -56px
 $i_mail-offset-y: -20px
 $i_mail-width: 20px
 $i_mail-height: 16px
-$i_mail-total-width: 75px
-$i_mail-total-height: 64px
+$i_mail-total-width: 85px
+$i_mail-total-height: 68px
 $i_mail-image: 'sprite.png'
-$i_mail: 26px 20px -26px -20px 20px 16px 75px 64px 'sprite.png' 'i_mail'
+$i_mail: 56px 20px -56px -20px 20px 16px 85px 68px 'sprite.png' 'i_mail'
 $i_map-name: 'i_map'
 $i_map-x: 0px
 $i_map-y: 0px
@@ -105,54 +105,54 @@ $i_map-offset-x: 0px
 $i_map-offset-y: 0px
 $i_map-width: 26px
 $i_map-height: 40px
-$i_map-total-width: 75px
-$i_map-total-height: 64px
+$i_map-total-width: 85px
+$i_map-total-height: 68px
 $i_map-image: 'sprite.png'
-$i_map: 0px 0px 0px 0px 26px 40px 75px 64px 'sprite.png' 'i_map'
+$i_map: 0px 0px 0px 0px 26px 40px 85px 68px 'sprite.png' 'i_map'
 $i_message-white-name: 'i_message-white'
-$i_message-white-x: 46px
-$i_message-white-y: 0px
-$i_message-white-offset-x: -46px
-$i_message-white-offset-y: 0px
+$i_message-white-x: 14px
+$i_message-white-y: 40px
+$i_message-white-offset-x: -14px
+$i_message-white-offset-y: -40px
 $i_message-white-width: 14px
 $i_message-white-height: 14px
-$i_message-white-total-width: 75px
-$i_message-white-total-height: 64px
+$i_message-white-total-width: 85px
+$i_message-white-total-height: 68px
 $i_message-white-image: 'sprite.png'
-$i_message-white: 46px 0px -46px 0px 14px 14px 75px 64px 'sprite.png' 'i_message-white'
+$i_message-white: 14px 40px -14px -40px 14px 14px 85px 68px 'sprite.png' 'i_message-white'
 $i_next-dark-name: 'i_next-dark'
-$i_next-dark-x: 60px
+$i_next-dark-x: 76px
 $i_next-dark-y: 32px
-$i_next-dark-offset-x: -60px
+$i_next-dark-offset-x: -76px
 $i_next-dark-offset-y: -32px
 $i_next-dark-width: 6px
 $i_next-dark-height: 10px
-$i_next-dark-total-width: 75px
-$i_next-dark-total-height: 64px
+$i_next-dark-total-width: 85px
+$i_next-dark-total-height: 68px
 $i_next-dark-image: 'sprite.png'
-$i_next-dark: 60px 32px -60px -32px 6px 10px 75px 64px 'sprite.png' 'i_next-dark'
+$i_next-dark: 76px 32px -76px -32px 6px 10px 85px 68px 'sprite.png' 'i_next-dark'
 $i_next-name: 'i_next'
-$i_next-x: 60px
+$i_next-x: 76px
 $i_next-y: 16px
-$i_next-offset-x: -60px
+$i_next-offset-x: -76px
 $i_next-offset-y: -16px
 $i_next-width: 9px
 $i_next-height: 16px
-$i_next-total-width: 75px
-$i_next-total-height: 64px
+$i_next-total-width: 85px
+$i_next-total-height: 68px
 $i_next-image: 'sprite.png'
-$i_next: 60px 16px -60px -16px 9px 16px 75px 64px 'sprite.png' 'i_next'
+$i_next: 76px 16px -76px -16px 9px 16px 85px 68px 'sprite.png' 'i_next'
 $i_person-white-name: 'i_person-white'
-$i_person-white-x: 38px
-$i_person-white-y: 40px
-$i_person-white-offset-x: -38px
-$i_person-white-offset-y: -40px
+$i_person-white-x: 0px
+$i_person-white-y: 54px
+$i_person-white-offset-x: 0px
+$i_person-white-offset-y: -54px
 $i_person-white-width: 12px
 $i_person-white-height: 14px
-$i_person-white-total-width: 75px
-$i_person-white-total-height: 64px
+$i_person-white-total-width: 85px
+$i_person-white-total-height: 68px
 $i_person-white-image: 'sprite.png'
-$i_person-white: 38px 40px -38px -40px 12px 14px 75px 64px 'sprite.png' 'i_person-white'
+$i_person-white: 0px 54px 0px -54px 12px 14px 85px 68px 'sprite.png' 'i_person-white'
 $i_phone-small-name: 'i_phone-small'
 $i_phone-small-x: 0px
 $i_phone-small-y: 40px
@@ -160,59 +160,70 @@ $i_phone-small-offset-x: 0px
 $i_phone-small-offset-y: -40px
 $i_phone-small-width: 14px
 $i_phone-small-height: 14px
-$i_phone-small-total-width: 75px
-$i_phone-small-total-height: 64px
+$i_phone-small-total-width: 85px
+$i_phone-small-total-height: 68px
 $i_phone-small-image: 'sprite.png'
-$i_phone-small: 0px 40px 0px -40px 14px 14px 75px 64px 'sprite.png' 'i_phone-small'
+$i_phone-small: 0px 40px 0px -40px 14px 14px 85px 68px 'sprite.png' 'i_phone-small'
 $i_phone-name: 'i_phone'
-$i_phone-x: 26px
+$i_phone-x: 56px
 $i_phone-y: 0px
-$i_phone-offset-x: -26px
+$i_phone-offset-x: -56px
 $i_phone-offset-y: 0px
 $i_phone-width: 20px
 $i_phone-height: 20px
-$i_phone-total-width: 75px
-$i_phone-total-height: 64px
+$i_phone-total-width: 85px
+$i_phone-total-height: 68px
 $i_phone-image: 'sprite.png'
-$i_phone: 26px 0px -26px 0px 20px 20px 75px 64px 'sprite.png' 'i_phone'
+$i_phone: 56px 0px -56px 0px 20px 20px 85px 68px 'sprite.png' 'i_phone'
 $i_placeholder-name: 'i_placeholder'
-$i_placeholder-x: 14px
+$i_placeholder-x: 54px
 $i_placeholder-y: 40px
-$i_placeholder-offset-x: -14px
+$i_placeholder-offset-x: -54px
 $i_placeholder-offset-y: -40px
 $i_placeholder-width: 12px
 $i_placeholder-height: 14px
-$i_placeholder-total-width: 75px
-$i_placeholder-total-height: 64px
+$i_placeholder-total-width: 85px
+$i_placeholder-total-height: 68px
 $i_placeholder-image: 'sprite.png'
-$i_placeholder: 14px 40px -14px -40px 12px 14px 75px 64px 'sprite.png' 'i_placeholder'
+$i_placeholder: 54px 40px -54px -40px 12px 14px 85px 68px 'sprite.png' 'i_placeholder'
 $i_prev-dark-name: 'i_prev-dark'
-$i_prev-dark-x: 60px
+$i_prev-dark-x: 76px
 $i_prev-dark-y: 42px
-$i_prev-dark-offset-x: -60px
+$i_prev-dark-offset-x: -76px
 $i_prev-dark-offset-y: -42px
 $i_prev-dark-width: 6px
 $i_prev-dark-height: 10px
-$i_prev-dark-total-width: 75px
-$i_prev-dark-total-height: 64px
+$i_prev-dark-total-width: 85px
+$i_prev-dark-total-height: 68px
 $i_prev-dark-image: 'sprite.png'
-$i_prev-dark: 60px 42px -60px -42px 6px 10px 75px 64px 'sprite.png' 'i_prev-dark'
+$i_prev-dark: 76px 42px -76px -42px 6px 10px 85px 68px 'sprite.png' 'i_prev-dark'
 $i_prev-name: 'i_prev'
-$i_prev-x: 60px
+$i_prev-x: 76px
 $i_prev-y: 0px
-$i_prev-offset-x: -60px
+$i_prev-offset-x: -76px
 $i_prev-offset-y: 0px
 $i_prev-width: 9px
 $i_prev-height: 16px
-$i_prev-total-width: 75px
-$i_prev-total-height: 64px
+$i_prev-total-width: 85px
+$i_prev-total-height: 68px
 $i_prev-image: 'sprite.png'
-$i_prev: 60px 0px -60px 0px 9px 16px 75px 64px 'sprite.png' 'i_prev'
-$spritesheet-width: 75px
-$spritesheet-height: 64px
+$i_prev: 76px 0px -76px 0px 9px 16px 85px 68px 'sprite.png' 'i_prev'
+$i_search-name: 'i_search'
+$i_search-x: 26px
+$i_search-y: 0px
+$i_search-offset-x: -26px
+$i_search-offset-y: 0px
+$i_search-width: 30px
+$i_search-height: 30px
+$i_search-total-width: 85px
+$i_search-total-height: 68px
+$i_search-image: 'sprite.png'
+$i_search: 26px 0px -26px 0px 30px 30px 85px 68px 'sprite.png' 'i_search'
+$spritesheet-width: 85px
+$spritesheet-height: 68px
 $spritesheet-image: 'sprite.png'
-$spritesheet-sprites: $i_arr $i_check $i_download $i_earth $i_location $i_mail-small $i_mail-white $i_mail $i_map $i_message-white $i_next-dark $i_next $i_person-white $i_phone-small $i_phone $i_placeholder $i_prev-dark $i_prev
-$spritesheet: 75px 64px 'sprite.png' $spritesheet-sprites
+$spritesheet-sprites: $i_arr $i_check $i_download $i_earth $i_location $i_mail-small $i_mail-white $i_mail $i_map $i_message-white $i_next-dark $i_next $i_person-white $i_phone-small $i_phone $i_placeholder $i_prev-dark $i_prev $i_search
+$spritesheet: 85px 68px 'sprite.png' $spritesheet-sprites
 
 /*
   The provided mixins are intended to be used with the array-like variables

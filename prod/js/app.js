@@ -71,49 +71,75 @@ $(document).ready(function () {
     autoplaySpeed: 4000  
   });
   
+    $('.slider-for').slick({
+    arrows: false,
+    asNavFor: '.slider-nav'
+  });
+  $('.slider-nav').slick({
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    asNavFor: '.slider-for',
+    arrows: true,
+//    centerMode: true,
+    focusOnSelect: true
+  });
+  $('.add_slider').slick({
+    slidesToShow: 5,
+    slidesToScroll: 5,
+    dots: true,
+    arrows: true
+  });
+  
   // portfolio gallery
   
   $(function() {
-  $(".img-w").each(function() {
-    $(this).wrap("<div class='img-c'></div>")
-    let imgSrc = $(this).find("img").attr("src");
-     $(this).css('background-image', 'url(' + imgSrc + ')');
+    $(".img-w").each(function() {
+      $(this).wrap("<div class='img-c'></div>")
+      let imgSrc = $(this).find("img").attr("src");
+       $(this).css('background-image', 'url(' + imgSrc + ')');
+    });
+
+    $(".img-c").click(function() {
+      let w = $(this).outerWidth()
+      let h = $(this).outerHeight()
+      let x = $(this).offset().left
+      let y = $(this).offset().top
+
+
+      $(".active").not($(this)).remove()
+      let copy = $(this).clone();
+      copy.insertAfter($(this)).height(h).width(w).delay(500).addClass("active")
+      $(".active").css('top', y - 8);
+      $(".active").css('left', x - 8);
+
+      setTimeout(function() {
+        copy.addClass("positioned")
+      }, 0)
+    }); 
   });
-  
-  $(".img-c").click(function() {
-    let w = $(this).outerWidth()
-    let h = $(this).outerHeight()
-    let x = $(this).offset().left
-    let y = $(this).offset().top
-    
-    
-    $(".active").not($(this)).remove()
-    let copy = $(this).clone();
-    copy.insertAfter($(this)).height(h).width(w).delay(500).addClass("active")
-    $(".active").css('top', y - 8);
-    $(".active").css('left', x - 8);
-    
-    setTimeout(function() {
-      copy.addClass("positioned")
-    }, 0)
-    
-  }); 
   
   $('.js-disable').on('click', function(e){
     e.preventDefault();
   });
 
+  $(document).on("click", ".img-c.active", function() {
+    let copy = $(this)
+    copy.removeClass("positioned active").addClass("postactive")
+    setTimeout(function() {
+      copy.remove();
+    }, 500)
+  });
   
-})
-
-$(document).on("click", ".img-c.active", function() {
-  let copy = $(this)
-  copy.removeClass("positioned active").addClass("postactive")
-  setTimeout(function() {
-    copy.remove();
-  }, 500)
-})
+  $(".js-zoom").imagezoomsl({
+    zoomrange: [1, 4],
+    zoomstart: 3,
+    innerzoom: true,
+    magnifierborder: "none"		 
+  });
   
+//  $('table').table_scroll({
+//    fixedColumnsLeft: 1,
+//  });
   
 // end document ready
 });
