@@ -137,9 +137,7 @@ $(document).ready(function () {
     magnifierborder: "none"		 
   });
   
-//  $('table').table_scroll({
-//    fixedColumnsLeft: 1,
-//  });
+
   
 // end document ready
 });
