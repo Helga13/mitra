@@ -2044,7 +2044,6 @@ main{
   tr{
     display: inline-block;
     cursor: pointer;
-    position: relative;
   }
   tbody tr{
     border-bottom: 2px dashed #ccc;
@@ -2071,7 +2070,6 @@ main{
     padding: 8px 4px;
     background-color: #fff;
     width: 90px;
-    height: 100%;
 //    z-index: 1;
   }
   th:first-child{

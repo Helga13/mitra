@@ -137,10 +137,119 @@ $(document).ready(function () {
     magnifierborder: "none"		 
   });
   
-
+  // tabel horisontal scroll
+  
+//    $('#js-scroller').mousedown(function (event) {
+//    // прикрепить 3 data элементу #js-scroller
+//    $(this)
+//      .data('down', true) // индикатор того, что мышь нажата
+//      .data('x', event.clientX) // текущая X-координата мышки
+//      .data('scrollLeft', this.scrollLeft); // текущая позиция скролла
+//        
+//    // вернуть false, чтобы избежать выделение текста и перетаскивания ссылок
+//   //внутри окна прокрутки
+//    return false;
+//  }).mouseup(function (event) {
+//    // Когда мышь отжата (mouse up), «выключить» индикатор down
+//    $(this).data('down', false);
+//  }).mousemove(function (event) {
+//    // если мышь нажата – начать эффект перетаскивания (drag)
+//    if ($(this).data('down') == true) {
+//      // this.scrollLeft - это scrollbar, появившийся из-за слишком большого
+//      //контента (overflowing content)
+//      // Новая позиция высчитывается по формуле: начальная позиция скролла +
+//      //начальная X-координата нажатой мышки – новая X-координата
+//      // Ищу того, кто мог бы как-то увеличить скорость прокрутки
+//      this.scrollLeft = $(this).data('scrollLeft') + $(this).data('x') - event.clientX;
+//    }
+//  }).mousewheel(function (event, delta) {
+//    // Сейчас подключаем плагин mouse wheel и прокручиваем на значение 'delta',
+//    // что является движением колесика, умноженное на произвольное число.
+//      
+//    this.scrollLeft -= (delta * 30);
+//  }).css({
+//    'overflow' : 'hidden', // изменить на hidden для пользователей с поддержкой JS
+//    'cursor' : '-moz-grab' // добавить курсор с изображением лапки
+//  });
+//});
+//
+//// И наконец, вызываем событие, если мышка вышла за пределы прокручиваемой области
+//// Мы не вызываем событие mouse up (так как мышь все еще нажата)
+//$(window).mouseout(function (event) {
+////  $(this).removeClass('scroll');
+//  if ($('#js-scroller').data('down')) {
+//    try {
+//      // *try* (попробовать) вычислить элемент, на который перешла мышка после того,
+//      //как покинула область
+//      // и если мы мы действительно вышли за пределы этой области,
+//      //то отключаем индикатор события mouse down
+//      if (event.originalTarget.nodeName == 'BODY' || event.originalTarget.nodeName == 'HTML') {
+//        $('#js-scroller').data('down', false);
+//      }
+//    } catch (e) {}
+//  }
+  
+  $('#js-scroller').css({
+    'overflow' : 'hidden', // изменить на hidden для пользователей с поддержкой JS
+    'cursor' : '-moz-grab' // добавить курсор с изображением лапки
+  });
   
 // end document ready
 });
+
+// tabel horisontal scroll
+   (function ($) {
+     $.fn.hasScrollBar = function () {
+       var hasScrollBar = {}
+         , e = this.get(0);
+       hasScrollBar.vertical = e.scrollHeight > e.clientHeight;
+       hasScrollBar.horizontal = e.scrollWidth > e.clientWidth;
+       return hasScrollBar;
+     }
+   })(jQuery);
+
+// Пример
+//$('#js-scroller').hasScrollBar().vertical
+//$('#js-scroller').hasScrollBar().horizontal
+
+if($('#js-scroller').hasScrollBar().horizontal){
+//  console.log(true);
+  document.getElementById("js-scroller")
+  .addEventListener('wheel', function(event) {
+    if (event.deltaMode == event.DOM_DELTA_PIXEL) {
+      var modifier = 1;
+      // иные режимы возможны в Firefox
+    } else if (event.deltaMode == event.DOM_DELTA_LINE) {
+      var modifier = parseInt(getComputedStyle(this).lineHeight);
+    } else if (event.deltaMode == event.DOM_DELTA_PAGE) {
+      var modifier = this.clientHeight;
+    }
+    if (event.deltaY != 0) {
+      // замена вертикальной прокрутки горизонтальной
+      this.scrollLeft += modifier * event.deltaY;
+      event.preventDefault();
+    }
+  });
+}else{
+//  console.log(false);
+}
+
+//document.getElementById("js-scroller")
+//  .addEventListener('wheel', function(event) {
+//    if (event.deltaMode == event.DOM_DELTA_PIXEL) {
+//      var modifier = 1;
+//      // иные режимы возможны в Firefox
+//    } else if (event.deltaMode == event.DOM_DELTA_LINE) {
+//      var modifier = parseInt(getComputedStyle(this).lineHeight);
+//    } else if (event.deltaMode == event.DOM_DELTA_PAGE) {
+//      var modifier = this.clientHeight;
+//    }
+//    if (event.deltaY != 0) {
+//      // замена вертикальной прокрутки горизонтальной
+//      this.scrollLeft += modifier * event.deltaY;
+//      event.preventDefault();
+//    }
+//  });
 
 var $nav = $('.greedy');
 var $btn = $('.greedy .more');
