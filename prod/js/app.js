@@ -194,44 +194,54 @@ $(document).ready(function () {
     'cursor' : '-moz-grab' // добавить курсор с изображением лапки
   });
   
+  // show contacts in header
+  
+  $('.js-showContacts').on('click', function(e){
+    e.preventDefault();
+    $(this).next().slideToggle(300);
+  });
+  
+  if($(window).width() < 901) {
+    $('.more_contacts').text('Свяжитесь с нами');
+  }
+  
 // end document ready
 });
 
 // tabel horisontal scroll
-   (function ($) {
-     $.fn.hasScrollBar = function () {
-       var hasScrollBar = {}
-         , e = this.get(0);
-       hasScrollBar.vertical = e.scrollHeight > e.clientHeight;
-       hasScrollBar.horizontal = e.scrollWidth > e.clientWidth;
-       return hasScrollBar;
-     }
-   })(jQuery);
 
-// Пример
-//$('#js-scroller').hasScrollBar().vertical
-//$('#js-scroller').hasScrollBar().horizontal
+var scroller = document.getElementById('js-scroller');
 
-if($('#js-scroller').hasScrollBar().horizontal){
-//  console.log(true);
-  document.getElementById("js-scroller")
-  .addEventListener('wheel', function(event) {
-    if (event.deltaMode == event.DOM_DELTA_PIXEL) {
-      var modifier = 1;
-      // иные режимы возможны в Firefox
-    } else if (event.deltaMode == event.DOM_DELTA_LINE) {
-      var modifier = parseInt(getComputedStyle(this).lineHeight);
-    } else if (event.deltaMode == event.DOM_DELTA_PAGE) {
-      var modifier = this.clientHeight;
+if (scroller) {
+  (function ($) {
+    $.fn.hasScrollBar = function () {
+      var hasScrollBar = {}
+        , e = this.get(0);
+      hasScrollBar.vertical = e.scrollHeight > e.clientHeight;
+      hasScrollBar.horizontal = e.scrollWidth > e.clientWidth;
+      return hasScrollBar;
     }
-    if (event.deltaY != 0) {
-      // замена вертикальной прокрутки горизонтальной
-      this.scrollLeft += modifier * event.deltaY;
-      event.preventDefault();
-    }
-  });
-}else{
-//  console.log(false);
+  })(jQuery);
+  if ($('#js-scroller').hasScrollBar().horizontal) {
+    //  console.log(true);
+    document.getElementById("js-scroller").addEventListener('wheel', function (event) {
+      if (event.deltaMode == event.DOM_DELTA_PIXEL) {
+        var modifier = 1;
+        // иные режимы возможны в Firefox
+      }
+      else if (event.deltaMode == event.DOM_DELTA_LINE) {
+        var modifier = parseInt(getComputedStyle(this).lineHeight);
+      }
+      else if (event.deltaMode == event.DOM_DELTA_PAGE) {
+        var modifier = this.clientHeight;
+      }
+      if (event.deltaY != 0) {
+        // замена вертикальной прокрутки горизонтальной
+        this.scrollLeft += modifier * event.deltaY;
+        event.preventDefault();
+      }
+    });
+  }
 }
 
 //document.getElementById("js-scroller")
@@ -305,13 +315,21 @@ function updateNav() {
 
 // Window listeners
 
+if($(window).width() < 1101) {
+  $('.menu_block .more').text('Разделы сайта');
+}
+
 $(window).resize(function() {
-    updateNav();
+  updateNav();
+  if($(window).width() < 1101) {
+    $('.menu_block .more').text('Разделы сайта');
+  }
 });
 
 $btn.on('click', function(e) {
   e.preventDefault();
-  $hlinks.toggleClass('hidden');
+//  $hlinks.toggleClass('hidden');
+  $hlinks.slideToggle();
 });
 
 updateNav();
