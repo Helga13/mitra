@@ -4,30 +4,44 @@ $(document).ready(function () {
   
   // select
   
+//  $('.js-category').select2({
+//    minimumResultsForSearch: Infinity,
+//    placeholder: 'Выберите категорию'
+//  }).val('').trigger('change');
+  
   $('.js-category').select2({
     minimumResultsForSearch: Infinity,
-    placeholder: 'Выберите категорию'
-  }).val('').trigger('change');
+    placeholder: {
+      id: '-1', // the value of the option
+    }
+  });
   
   $('.js-amount').select2({
     minimumResultsForSearch: Infinity,
-    placeholder: 'Выберите объем'
-  }).val('').trigger('change');
+    placeholder: {
+      id: '-1', // the value of the option
+    }
+  });
   
   $('.js-material').select2({
     minimumResultsForSearch: Infinity,
-    placeholder: 'Выберите материал'
-  }).val('').trigger('change');
+    placeholder: {
+      id: '-1', // the value of the option
+    }
+  });
   
   $('.js-size').select2({
     tags: true,
     minimumResultsForSearch: Infinity,
-    placeholder: 'Выберите стандарт горла',
+//    placeholder: 'Выберите стандарт горла',
     maximumSelectionLength: 5,
     createSearchChoice : function(term){
       return false;
     }
   });
+  var dataPlaceholder = $('.js-size').attr('data-placeholder');
+  console.log(dataPlaceholder);
+  $('.select2-search__field').attr('placeholder', dataPlaceholder);
   $('.js-size').on('select2:open', function (e) {
     $('.select2-search input').prop('focus',false);
   });
@@ -80,7 +94,6 @@ $(document).ready(function () {
     slidesToScroll: 1,
     asNavFor: '.slider-for',
     arrows: true,
-//    centerMode: true,
     focusOnSelect: true
   });
   $('.add_slider').slick({

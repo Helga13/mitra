@@ -898,6 +898,7 @@ main{
         line-height: 24px;
         letter-spacing: 0.01em;
         margin: 12px 0;
+        font-size: 16px;
         &:before{
           content: '';
           position: absolute;
@@ -918,6 +919,7 @@ main{
         line-height: 24px;
         letter-spacing: 0.01em;
         margin: 12px 0;
+        font-size: 16px;
         &:before{
           counter-increment: list;
           content: counter(list);
@@ -1243,6 +1245,11 @@ main{
     text-align: center;
   }
 }
+.news-page{
+  .news_item{
+    padding-bottom: 40px;
+  }
+}
 .news_item{
   font-size: 0;
   margin: 0 -15px;
@@ -1283,6 +1290,7 @@ main{
     letter-spacing: 0.025em;
     padding: 13px 0 26px;
     height: 129px;
+    text-transform: uppercase;
   }
   .text{
     padding-bottom: 38px;
@@ -1373,6 +1381,15 @@ main{
   .col_item{
     width: 50%;
   }
+}
+.col{
+  padding-bottom: 45px;
+}
+.col2{
+  columns: 2;
+  column-gap: 30px;
+  column-rule: 0;
+  padding-bottom: 45px;
 }
 .col_item{
   padding: 0 15px;
@@ -1518,7 +1535,11 @@ main{
         background-color: rgba(255,255,255,0);
       }
       .btn{
-        width: 183px;
+        max-width: 183px;
+        height: auto;
+        line-height: 22px;
+        padding-top: 13px;
+        padding-bottom: 13px;
         img{
           width: 10px;
           height: 10px;
@@ -1807,6 +1828,11 @@ main{
 .select2-search__field{
   height: auto;
   min-height: 30px;
+  width: 100%!important;
+  white-space: nowrap;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__rendered li{
+  width: 100%;
 }
 .select2-container--default .select2-selection--multiple{
   background: #fff;
