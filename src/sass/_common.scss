@@ -461,6 +461,12 @@ header{
     font-family: 'WeblySleekUISemibold', $font-stack-helvetica;
     position: relative;
     display: table-cell;
+    &.active > a{
+      color: #009fac;
+      &:after{
+        background-color: #009fac;
+      }
+    }
   }
   .more{
     font-size: 14px;

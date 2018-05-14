@@ -19,6 +19,113 @@
       }
     }
   }
+  .category_menu{
+    height: 688px;
+  }
+  .category_item .name{
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .category_item.accessories{
+    width: 400px;
+    height: 390px;
+    a{
+      padding-left: 148px;
+      padding-right: 50px;
+      &:after{
+        background-position: left -84px bottom 6px, right -102px bottom 94px;
+      }
+      &:hover:after,
+      &:focus:after,
+      &:active:after{
+        background-position: left -78px bottom 12px, right -94px bottom 100px;
+      }
+    }
+  }
+  .category_item.medicine{
+    width: 550px;
+    height: 520px;
+    bottom: -108px;
+    a{
+      padding-top: 180px;
+      padding-left: 43%;
+      &:after{
+        top: -80px;
+        background-position: top -150px left -90px, right 60px top -40px, right -6px bottom -85px, right 320px bottom 10px, left -46px top 245px;
+      }
+      &:hover:after,
+      &:focus:after,
+      &:active:after{
+        background-position: top -144px left -84px, right 64px top -34px, right 0px bottom -79px, right 326px bottom 16px, left -40px top 251px;
+      }
+    }
+  }
+  .category_item.packaging{
+    left: 23%;
+  }
+  .category_item.bottles{
+    left: 40%;
+    height: 850px;
+    a{
+      padding-top: 258px;
+      padding-left: 62px;
+      &:after{
+        background-position: top -178px left 306px, left -6px bottom 149px , right 208px bottom 213px;
+      }
+      &:hover:after,
+      &:focus:after,
+      &:active:after{
+        background-position: top -172px left 312px, left 0px bottom 155px , right 214px bottom 219px;
+      }
+    }
+  }
+  .category_item.pots{
+    width: 660px;
+    height: 640px;
+    a{
+      &:after{
+        bottom: -40px;
+        background-position: left 7px bottom -6px, right 100px top 62px;
+      }
+      &:hover:after,
+      &:focus:after,
+      &:active:after{
+        background-position: left 11px bottom 0px, right 106px top 68px;
+      }
+    }
+  }
+  .category_item.caps{
+    width: 1040px;
+    bottom: -240px;
+    a{
+      padding-top: 90px;
+      padding-left: 53%;
+      &:after{
+        background-position: top 100px left 270px , top -10px right 302px, right -6px bottom 200px;
+      }
+      &:hover:after,
+      &:focus:after,
+      &:active:after{
+        background-position: top 106px left 276px , top -4px right 308px, right 0px bottom 206px;
+      }
+    }
+  }
+  .category_item.household{
+    width: 670px;
+    height: 960px;
+    a{
+      padding-top: 450px;
+      padding-left: 40px;
+      &:after{
+        background-position: bottom -40px left -122px, top 10px right 262px, left 372px bottom -80px;
+      }
+      &:hover:after,
+      &:focus:after,
+      &:active:after{
+        background-position: bottom -34px left -116px, top 16px right 268px, left 378px bottom -74px;
+      }
+    }
+  }
 }
 @media only screen and (max-width : 1620px) {
   .links_contacts li:nth-last-child(2){
@@ -55,6 +162,47 @@
   .middle_header_bottom{
     padding: 11px 49% 11px 280px;
   }
+  .category_item.packaging{
+    left: 25%;
+  }
+  .category_item.household{
+    width: 610px;
+    height: 880px;
+    a{
+      padding-top: 390px;
+      &:after{
+        background-position: bottom -56px left -122px,top -10px right 210px,left 382px bottom -96px;
+      }
+      &:hover:after,
+      &:focus:after,
+      &:active:after{
+        background-position: bottom -50px left -116px,top -4px right 216px,left 388px bottom -90px;
+      }
+    }
+  }
+  .category_item.pots{
+    left: 67%;
+  }
+  .category_item.bottles{
+    left: 43%;
+  }
+}
+@media only screen and (max-width : 1440px) {
+  .category_item.accessories{
+    width: 380px;
+    a{
+      padding-left: 120px;
+      padding-top: 108px;
+      &:after{
+        background-position: left -112px bottom -10px,right -102px bottom 94px;
+      }
+      &:hover:after,
+      &:focus:after,
+      &:active:after{
+        background-position: left -106px bottom -4px,right -96px bottom 100px;
+      }
+    }
+  }
 }
 @media only screen and (max-width : 1366px) {
   .logo{
@@ -77,6 +225,177 @@
   }
   .menu_container {
     padding-top: 24px;
+  }
+  .news_item .img_wrap{
+    img{
+      width: auto;
+      max-width: none;
+      min-width: 100%;
+    }
+  }
+  .category_item .name{
+    font-size: 16px;
+    line-height: 24px;
+    &:after{
+      bottom: -25px;
+    }
+  }
+  .category_item.accessories{
+    a{
+      padding-left: 128px;
+      padding-top: 112px;
+      padding-right: 70px;
+      &:after{
+        background-position: left -99px bottom -14px,right -56px bottom 62px;
+      }
+      &:hover:after,
+      &:focus:after,
+      &:active:after{
+        background-position: left -93px bottom -8px,right -50px bottom 68px;
+      }
+    }
+  }
+  .category_item.medicine{
+    bottom: -100px;
+    height: 496px;
+    a{
+      padding-top: 176px;
+      padding-left: 160px;
+      &:after{
+        background-position: top -164px left -106px,right 108px top 32px,right 60px bottom -140px,right 344px bottom -26px,left -100px top 270px;
+      }
+      &:hover:after,
+      &:focus:after,
+      &:active:after{
+        background-position: top -158px left -100px,right 116px top 38px,right 66px bottom -134px,right 350px bottom -20px,left -94px top 276px;
+      }
+    }
+  }
+  .category_item.packaging{
+    left: 24.5%;
+    a{
+      padding-top: 129px;
+      padding-left: 37px;
+      &:after{
+        background-position: left -18px bottom 102px, right 36px top 70px;
+      }
+      &:hover:after,
+      &:focus:after,
+      &:active:after{
+        background-position: left -12px bottom 108px, right 42px top 76px;
+      }
+    }
+  }
+  .category_item.bottles {
+    left: 39.5%;
+    width: 576px;
+    height: 770px;
+    a{
+      padding-right: 310px;
+      padding-top: 258px;
+      padding-left: 80px;
+      &:after{
+        top: -14px;
+        background-position: top -150px left 292px,left -14px bottom 86px,right 155px bottom 150px;
+      }
+      &:hover:after,
+      &:focus:after,
+      &:active:after{
+        background-position: top -144px left 298px,left -8px bottom 92px,right 161px bottom 156px;
+      }
+    }
+  }
+  .category_item.caps{
+    left: 6.5%;
+    width: 983px;
+    bottom: -250px;
+    a{
+      padding-top: 97px;
+      padding-left: 62%;
+      padding-right: 180px;
+      &:after{
+        background-position: top 82px left 334px,top -22px right 194px,right 10px bottom 224px;
+      }
+      &:hover:after,
+      &:focus:after,
+      &:active:after{
+        background-position: top 88px left 340px,top -16px right 200px,right 16px bottom 230px;
+      }
+    }
+  }
+  .category_item.pots {
+    left: 68%;
+    width: 490px;
+    height: 640px;
+    a{
+      padding-top: 267px;
+      padding-left: 66px;
+      padding-right: 200px;
+      &:after{
+        background-position: left 0px bottom -46px,right -44px top 94px;
+      }
+      &:hover:after,
+      &:focus:after,
+      &:active:after{
+        background-position: left 6px bottom -40px,right -38px top 100px;
+      }
+    }
+  }
+  .category_item.household {
+    width: 340px;
+    height: 800px;
+    bottom: -246px;
+    right: -88px;
+    a{
+      padding-top: 382px;
+      padding-left: 30px;
+      padding-right: 190px;
+      &:after{
+        background-position: bottom -156px left -130px,top 46px right -30px,left 312px bottom -210px;
+      }
+      &:hover:after,
+      &:focus:after,
+      &:active:after{
+        background-position: bottom -150px left -124px,top 52px right -24px,left 318px bottom -204px;
+      }
+    }
+  }
+}
+@media only screen and (max-width : 1270px) {
+  .category_item.packaging {
+    left: 29%;
+  }
+  .category_item.bottles{
+    left: 48%;
+  }
+  .category_item.pots{
+    left: 73%;
+    a{
+      padding-top: 196px;
+      &:after{
+        background-position: left 0 bottom 40px,right 28px top 70px;
+      }
+      &:hover:after,
+      &:focus:after,
+      &:active:after{
+        background-position: left 6px bottom 46px,right 34px top 76px;
+      }
+    }
+  }
+  .category_item.caps{
+    a{
+      padding-top: 70px;
+      padding-left: 49%;
+      padding-right: 310px;
+      &:after{
+        background-position: top 100px left 228px,top -26px right 250px,right 136px bottom 176px;
+      }
+      &:hover:after,
+      &:focus:after,
+      &:active:after{
+        background-position: top 106px left 234px,top -20px right 256px,right 142px bottom 182px;
+      }
+    }
   }
 }
 @media only screen and (max-width : 1100px) {
@@ -108,6 +427,171 @@
   .middle_header_top{
     padding-right: 400px;
   }
+  .category_menu{
+    height: 922px;
+  }
+  .category_item.accessories{
+    a{
+      padding-left: 130px;
+      padding-top: 67px;
+      &:after{
+        background-position: left -94px bottom 24px,right -52px bottom 98px;
+      }
+      &:hover:after,
+      &:focus:after,
+      &:active:after{
+        background-position: left -88px bottom 30px,right -46px bottom 104px;
+      }
+    }
+  }
+  .category_item.medicine{
+    bottom: auto;
+    top: 274px;
+    a{
+      padding-top: 164px;
+      padding-left: 184px;
+      &:after{
+        background-position: top -170px left -104px,right 105px top 27px,right 53px bottom -78px,right 331px bottom 8px,left -70px top 237px;
+      }
+      &:hover:after,
+      &:focus:after,
+      &:active:after{
+        background-position: top -164px left -98px,right 111px top 33px,right 59px bottom -72px,right 337px bottom 14px,left -64px top 243px;
+      }
+    }
+  }
+  .category_item.packaging{
+    left: 32%;
+    a{
+      padding-top: 107px;
+      padding-left: 56px;
+      &:after{
+        background-position: left -6px bottom 101px,right 21px top 34px;
+      }
+      &:hover:after,
+      &:focus:after,
+      &:active:after{
+        background-position: left -12px bottom 107px,right 27px top 40px;
+      }
+    }
+  }
+  .category_item.bottles{
+    left: auto;
+    top: -20px;
+    right: -132px;
+    height: 804px;
+    a{
+      padding-right: 310px;
+      padding-top: 336px;
+      padding-left: 120px;
+      &:after{
+        background-position: top -150px left 292px,left -6px bottom 22px,right 135px bottom 84px;
+      }
+      &:hover:after,
+      &:focus:after,
+      &:active:after{
+        background-position: top -144px left 298px,left 0px bottom 28px,right 141px bottom 64px;
+      }
+    }
+  }
+  .category_item.pots{
+    top: 553px;
+    height: 400px;
+    width: 100%;
+    left: 0;
+    transform: rotate(-8.7deg);
+    .name{
+      transform: rotate(8.7deg);
+    }
+    a{
+      padding-top: 130px;
+      padding-left: 45%;
+      padding-right: 35%;
+      &:after{
+        transform: rotate(8.7deg);
+        bottom: 0;
+        top: -80px;
+        background-position: left 130px bottom 90px,right 130px top -126px;
+      }
+      &:hover:after,
+      &:focus:after,
+      &:active:after{
+        background-position: left 136px bottom 96px,right 136px top -120px;
+      }
+    }
+  }
+  .category_item.caps{
+    z-index: 1;
+    width: 300px;
+    bottom: -274px;
+    left: 62px;
+    transform: rotate(-62deg);
+    height: 640px;
+    .name{
+      transform: rotate(62deg);
+    }
+    a{
+      padding-top: 216px;
+      padding-left: 112px;
+      padding-right: 0px;
+      &:after{
+        top: 0;
+        right: -210px;
+        left: -74px;
+        bottom: 100px;
+        transform: rotate(62deg);
+        background-position: top 280px left 52px,top 70px right 332px,right 8px bottom 18px;
+      }
+      &:hover:after,
+      &:focus:after,
+      &:active:after{
+        background-position: top 286px left 58px,top 76px right 338px,right 14px bottom 24px;
+      }
+    }
+  }
+  .category_item.household{
+    transform: rotate(47deg);
+    right: -40px;
+    z-index: 1;
+    width: 380px;
+    bottom: -270px;
+    .name{
+      transform: rotate(-47deg);
+    }
+    a{
+      padding-top: 354px;
+      padding-left: 52px;
+      &:after{
+        transform: rotate(-47deg);
+        background-position: bottom -128px left -156px,top 16px right -48px,left 324px bottom -176px;
+      }
+      &:hover:after,
+      &:focus:after,
+      &:active:after{
+        background-position: bottom -122px left -150px,top 22px right -42px,left 330px bottom -170px;
+      }
+    }
+  }
+}
+@media only screen and (max-width : 1024px) {
+  .catalog_search{
+    @include clearfix;
+    .field{
+      width: 33.333%;
+      &:last-child{
+        float: right;
+      }
+    }
+  } 
+  .company_news .wrap{
+    padding: 0;
+  }
+  .news_item{
+    margin: 0;
+  }
+  .news_item .img{
+    padding-left: 0;
+  }
 }
 @media only screen and (max-width : 992px) {
   .middle_header_top{
@@ -126,6 +610,48 @@
   .menu_block{
     height: 94px;
   }
+  .category_menu{
+    height: 958px;
+  }
+  .category_item.accessories{
+    a{
+      padding-left: 90px;
+      padding-top: 98px;
+      padding-right: 116px;
+      &:after{
+        background-position: left -100px bottom -30px,right -52px bottom 50px;
+      }
+      &:hover:after,
+      &:focus:after,
+      &:active:after{
+        background-position: left -94px bottom -24px,right -46px bottom 56px;
+      }
+    }
+  }
+  .category_item.medicine{
+    top: 300px;
+    
+  }
+  .category_item.pots{
+    top: 584px;
+    a{
+      &:after{
+        background-position: left 104px bottom 78px,right 84px top -126px;
+      }
+      &:hover:after,
+      &:focus:after,
+      &:active:after{
+        background-position: left 110px bottom 84px,right 90px top -120px;
+      }
+    }
+  }
+  .category_item.packaging{
+    left: 34%;
+  }
+  .category_item.bottles{
+    top: 24px;
+    right: -196px;
+  }
 }
 @media only screen and (max-width : 900px) {
   .links_contacts li{
@@ -137,6 +663,78 @@
   .middle_header_bottom{
     padding-left: 188px;
   }
+  .news_item .news_title{
+    height: 150px;
+  }
+  .news_item .text{
+    height: 120px;
+  }
+  .news_dots .slick-dots{
+    bottom: -36px;
+  }
+  .category_item.packaging{
+    left: 37%;
+  }
+  .category_item.bottles{
+    width: 524px;
+    a{
+      padding-top: 260px;
+      padding-left: 56px;
+      &:after{
+        padding-top: 255px;
+        padding-left: 60px;
+        background-position: top -150px left 292px,left -58px bottom -48px,right 135px bottom 84px;
+      }
+      &:hover:after,
+      &:focus:after,
+      &:active:after{
+        background-position: top -144px left 298px,left -52px bottom -42px,right 141px bottom 90px;
+      }
+    }
+  }
+  .category_item.household{
+    height: 730px;
+    right: -80px;
+    bottom: -256px;
+    a{
+      padding-top: 300px;
+      padding-left: 26px;
+      &:after{
+        background-position: bottom -168px left -150px,top -44px right -60px,left 328px bottom -242px;
+      }
+      &:hover:after,
+      &:focus:after,
+      &:active:after{
+        background-position: bottom -162px left -144px,top -38px right -54px,left 334px bottom -236px;
+      }
+    }
+  }
+  .category_item.pots{
+    a{
+      padding-top: 86px;
+      padding-left: 42%;
+      &:after{
+        background-position: left 54px bottom 90px,right 20px top -126px;
+      }
+      &:hover:after,
+      &:focus:after,
+      &:active:after{
+        background-position: left 60px bottom 96px,right 26px top -120px;
+      }
+    }
+  }
+  .category_item.caps{
+    a{
+      &:after{
+        background-position: top 300px left 24px,top 70px right 332px,right 40px bottom 54px;
+      }
+      &:hover:after,
+      &:focus:after,
+      &:active:after{
+        background-position: top 306px left 30px,top 76px right 338px,right 46px bottom 60px;
+      }
+    }
+  }
 }
 @media only screen and (max-width : 768px) {
   .greedy_contacts{
@@ -144,6 +742,85 @@
   }
   .middle_header_bottom{
     height: 48px;
+  }
+  .catalog_search .field{
+    width: 50%;
+    &:last-child{
+      float: none;
+    }
+  }
+  .news_item .img,
+  .news_item .content_block{
+    width: 100%;
+  }
+  .news_item .img{
+    padding-right: 0;
+    margin-bottom: 25px;
+  }
+  .news_item .content_block{
+    padding: 0 55px;
+  }
+  .news_item .news_title,
+  .news_item .text{
+    height: auto;
+  }
+  .news_dots .slick-dots{
+    bottom: auto;
+    top: 408px;
+    left: 50px;
+  }
+  .skyweb{
+    padding-top: 10px;
+  }
+  .logo{
+    width: 140px;
+  }
+  .logo_container{
+    padding: 30px 30px 18px 40px;
+  }
+  .category_item.bottles{
+    height: 730px;
+    width: 440px;
+    top: 60px;
+    a{
+      &:after{
+        background-position: top -150px left 292px,left -58px bottom -48px,right 134px bottom 0px;
+      }
+      &:hover:after,
+      &:focus:after,
+      &:active:after{
+        background-position: top -144px left 298px,left -52px bottom -42px,right 141px bottom 6px;
+      }
+    }
+  }
+  .category_item.packaging{
+    left: 46%;
+    width: 440px;
+    height: 640px;
+    a{
+      padding-top: 142px;
+      padding-left: 46px;
+      &:after{
+        background-position: left -36px bottom -34px,right -96px top -6px;
+      }
+      &:hover:after,
+      &:focus:after,
+      &:active:after{
+        background-position: left -30px bottom -28px,right -90px top 0px;
+      }
+    }
+  }
+  .category_item.pots{
+    a{
+      &:after{
+        background-position: left -44px bottom 140px,right -46px top -180px;
+      }
+      &:hover:after,
+      &:focus:after,
+      &:active:after{
+        background-position: left -38px bottom 146px,right -40px top -174px;
+      }
+    }
   }
 }
 @media only screen and (max-width : 600px) {
@@ -164,6 +841,161 @@
   }
   .menu_container{
     padding: 34px 17px 0 20px;
+  }
+  .category_menu{
+    height: 2032px;
+  }
+  .category_item.packaging{
+    left: -22px;
+    right: -20px;
+    width: auto;
+    height: 400px;
+    a{
+      padding-left: 136px;
+      padding-top: 120px;
+      &:after{
+        bottom: -32px;
+        background-position: left 10px bottom -200px,right -96px top -6px;
+      }
+      &:hover:after,
+      &:focus:after,
+      &:active:after{
+        background-position: left 16px bottom -194px,right -90px top 0px;
+      }
+    }
+  }
+  .category_item.accessories{
+    position: absolute;
+    bottom: -20px;
+    z-index: 3;
+    width: auto;
+    left: -10px;
+    right: -14px;
+    transform: rotate(-4deg);
+    height: 340px;
+    .name{
+      transform: rotate(4deg);
+    }
+    a{
+      padding-left: 152px;
+      padding-top: 70px;
+      &:after{
+        transform: rotate(4deg);
+        background-position: left -78px bottom -74px,right -58px bottom -16px;
+      }
+      &:hover:after,
+      &:focus:after,
+      &:active:after{
+        background-position: left -72px bottom -68px,right -52px bottom -10px;
+      }
+    }
+  }
+  .category_item.bottles{
+    left: 138px;
+    right: 0;
+    transform: rotate(63deg);
+    width: 460px;
+    height: 800px;
+    top: 64px;
+    .name{
+      transform: rotate(-63deg);
+    }
+    a{
+      padding-top: 320px;
+      padding-right: 200px;
+      &:after{
+        transform: rotate(-63deg);
+        left: -198px;
+        background-position: top -30px right -178px,left -76px bottom -130px,right 10px bottom -16px;
+      }
+      &:hover:after,
+      &:focus:after,
+      &:active:after{
+        background-position: top -24px right -172px,left -70px bottom -124px,right 16px bottom -10px;
+      }
+    }
+  }
+  .category_item.medicine{
+    z-index: 1;
+    top: 584px;
+    width: auto;
+    transform: rotate(2deg);
+    left: -10px;
+    right: -20px;
+    height: 320px;
+    .name{
+      transform: rotate(-2deg);
+    }
+    a{
+      padding-top: 130px;
+      padding-left: 164px;
+      &:after{
+        transform: rotate(-2deg);
+        background-position: top -196px left -104px,right 105px top 27px,right 44px bottom -178px,left 90px bottom -136px,left -70px top 237px;
+      }
+      &:hover:after,
+      &:focus:after,
+      &:active:after{
+        background-position: top -190px left -98px,right 111px top 33px,right 50px bottom -172px,left 96px bottom -130px,left -64px top 243px;
+      }
+    }
+  }
+  .category_item.pots{
+    top: 848px;
+    z-index: 1;
+    height: 330px;
+    left: -30px;
+    right: -30px;
+    width: auto;
+  }
+  .category_item.household{
+    top: 1000px;
+    height: 700px;
+    bottom: auto;
+    left: 90px;
+    width: 500px;
+    transform: rotate(69deg);
+    .name{
+      transform: rotate(-69deg);
+    }
+    a{
+      &:after{
+        transform: rotate(-69deg);
+        background-position: bottom -168px left -150px,top -44px right -60px,right 4px bottom -242px;
+      }
+      &:hover:after,
+      &:focus:after,
+      &:active:after{
+        background-position: bottom -162px left -144px,top -38px right -54px,right 10px bottom -236px;
+      }
+    }
+  }
+  .category_item.caps{
+    z-index: 2;
+    bottom: 82px;
+    transform: rotate(-78deg);
+    width: 330px;
+    left: 110px;
+    .name{
+      transform: rotate(78deg);
+    }
+    a{
+      padding-top: 330px;
+      padding-left: 96px;
+      padding-right: 30px;
+      &:after{
+        transform: rotate(78deg);
+        right: -210px;
+        left: -50px;
+        bottom: 0px;
+        background-position: top 380px left -44px,top 144px left -50px,right -20px bottom 50px;
+      }
+      &:hover:after,
+      &:focus:after,
+      &:active:after{
+        background-position: top 386px left -38px,top 150px left -44px,right -14px bottom 56px;
+      }
+    }
   }
 }
 @media only screen and (max-width : 480px) {
