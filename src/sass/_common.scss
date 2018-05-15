@@ -858,6 +858,21 @@ main .pagination{
   }
 }
 
+/* tabs */
+
+.js-tabs{
+  .tabs_content{
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    &.active{
+      height: auto;
+      padding-top: 40px;
+      padding-bottom: 60px;
+    }
+  }
+}
+
 /* main */
 
 main{
@@ -1410,6 +1425,9 @@ main{
     text-align: center;
     padding-bottom: 24px;
   }
+  img{
+    max-width: 100%;
+  }
 }
 
 /* portfolio gallery */
@@ -1529,7 +1547,7 @@ main{
     }
     &.download{
       background: url('../img/catalog/download-substrate.png') center no-repeat;
-      background-size: contain;
+      background-size: cover;
       text-align: center;
       &:before{
         background-color: rgba(255,255,255,0);
@@ -1565,7 +1583,7 @@ main{
         img{
           max-width: 120px;
           display: block;
-          margin: 0 auto 52px;
+          margin: 0 auto 26%;
         }
       }
       .caption{
@@ -1680,10 +1698,10 @@ main{
   display: flex;
   flex-wrap: wrap;
   padding-top: 52px;
-  padding-bottom: 82px;
+  padding-bottom: 52px;
 }
 .contacts_item{
-  padding: 0 15px;
+  padding: 0 15px 30px;
   width: 33.333%;
   h2{
     padding-bottom: 20px;
@@ -1774,6 +1792,7 @@ main{
 .subcategory_link{
   float: left;
   margin-right: 20px;
+  margin-bottom: 20px;
   width: 160px;
   height: 160px;
   box-shadow: none!important;
@@ -2185,6 +2204,7 @@ main{
   }
   img{
     max-width: 100%;
+    margin: 0 auto;
   }
   .caption{
     background-color: #e4edf3;

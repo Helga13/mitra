@@ -85,7 +85,7 @@ $(document).ready(function () {
     autoplaySpeed: 4000  
   });
   
-    $('.slider-for').slick({
+  $('.slider-for').slick({
     arrows: false,
     asNavFor: '.slider-nav'
   });
@@ -94,13 +94,82 @@ $(document).ready(function () {
     slidesToScroll: 1,
     asNavFor: '.slider-for',
     arrows: true,
-    focusOnSelect: true
+    focusOnSelect: true,
+    responsive: [
+    {
+      breakpoint: 1025,
+      settings: {
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 769,
+      settings: {
+        slidesToShow: 5
+      }
+    },
+    {
+      breakpoint: 601,
+      settings: {
+        slidesToShow: 4
+      }
+    },
+      {
+      breakpoint: 481,
+      settings: {
+        slidesToShow: 3
+      }
+    },
+      {
+      breakpoint: 361,
+      settings: {
+        slidesToShow: 2,
+      }
+    }
+  ]
   });
   $('.add_slider').slick({
     slidesToShow: 5,
     slidesToScroll: 5,
     dots: true,
-    arrows: true
+    arrows: true,
+    responsive: [
+    {
+      breakpoint: 1025,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 4,
+      }
+    },
+    {
+      breakpoint: 901,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+      }
+    },
+      {
+      breakpoint: 769,
+      settings: {
+        slidesToShow: 5,
+        slidesToScroll: 5,
+      }
+    },
+      {
+      breakpoint: 541,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 4,
+      }
+    },
+    {
+      breakpoint: 361,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+      }
+    }
+  ]
   });
   
   // portfolio gallery
@@ -152,6 +221,13 @@ $(document).ready(function () {
   
   // tabel horisontal scroll
   
+//  $('#js-scroller table').DataTable( {
+//    "scrollX": true,
+//    "bPaginate": false,
+//    "bFilter": false,
+//    fixedColumns: true
+//  });
+   
 //    $('#js-scroller').mousedown(function (event) {
 //    // прикрепить 3 data элементу #js-scroller
 //    $(this)
@@ -201,7 +277,7 @@ $(document).ready(function () {
 //      }
 //    } catch (e) {}
 //  }
-  
+//  
   $('#js-scroller').css({
     'overflow' : 'hidden', // изменить на hidden для пользователей с поддержкой JS
     'cursor' : '-moz-grab' // добавить курсор с изображением лапки
@@ -217,6 +293,16 @@ $(document).ready(function () {
   if($(window).width() < 901) {
     $('.more_contacts').text('Свяжитесь с нами');
   }
+  
+  // tabs
+  $('.js-tabs').each(function () {
+    $(this).find('.table_block tbody tr').each(function (i) {
+      $(this).on('click', function (e) {
+        e.preventDefault();
+        $(this).addClass('active').siblings().removeClass('active').parents('.js-tabs').find('.tabs_content').removeClass('active').eq(i).addClass('active');
+      });
+    });
+  });
   
 // end document ready
 });
@@ -256,6 +342,8 @@ if (scroller) {
     });
   }
 }
+
+
 
 //document.getElementById("js-scroller")
 //  .addEventListener('wheel', function(event) {

@@ -360,6 +360,9 @@
       }
     }
   }
+  .catalog_item .catalog_wrap.download .text img{
+    margin-bottom: 11%;
+  }
 }
 @media only screen and (max-width : 1270px) {
   .category_item.packaging {
@@ -395,6 +398,27 @@
       &:active:after{
         background-position: top 106px left 234px,top -20px right 256px,right 142px bottom 182px;
       }
+    }
+  }
+  .catalog_item .catalog_wrap.download .text img {
+    margin-bottom: 8%;
+    max-width: 100px;
+  }
+  .catalog_item .catalog_wrap.download .text .inner{
+    margin-bottom: 30px;
+  }
+  .catalog_item .catalog_wrap.download .text .inner,
+  .catalog_item .name{
+    font-size: 18px;
+  }
+  .subcategory_link{
+    margin-right: 12px;
+    margin-bottom: 12px;
+    padding: 12px 8px;
+    width: 140px;
+    img{
+      margin: 0 auto 10px;
+      height: 70px;
     }
   }
 }
@@ -572,6 +596,10 @@
       }
     }
   }
+  .table_block td:first-child, 
+  .table_block th:first-child{
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  }
 }
 @media only screen and (max-width : 1024px) {
   .catalog_search{
@@ -591,6 +619,13 @@
   }
   .news_item .img{
     padding-left: 0;
+  }
+  .catalog_item{
+    width: 33.333%;
+  }
+  .img-c{
+    width: 33.333%;
+    padding-top: 33.333%;
   }
 }
 @media only screen and (max-width : 992px) {
@@ -651,6 +686,18 @@
   .category_item.bottles{
     top: 24px;
     right: -196px;
+  }
+  .title, h1{
+    font-size: 36px;
+    line-height: 56px;
+  }
+  .subcategory_link{
+    width: auto;
+    height: auto;
+    img{
+      display: none;
+      visibility: hidden;
+    }
   }
 }
 @media only screen and (max-width : 900px) {
@@ -735,8 +782,32 @@
       }
     }
   }
+  .contacts_item{
+    width: 50%;
+  }
+  .subcategory{
+    width: 100%;
+    padding-right: 0;
+    float: none;
+    margin-bottom: 5px;
+  }
+  .filters{
+    width: 100%;
+    float: none;
+    margin: 0;
+    .field{
+      padding-left: 0;
+    }
+    .price_range{
+      padding-right: 0;
+      padding-left: 15px;
+    }
+  }
 }
 @media only screen and (max-width : 768px) {
+  .wrap, .wrap_wide{
+    padding: 0 18px;
+  }
   .greedy_contacts{
     display: none;
   }
@@ -830,6 +901,37 @@
         background-position: left -38px bottom 146px,right -40px top -174px;
       }
     }
+  }
+  .catalog_item{
+    width: 50%;
+  }
+  .title, h1{
+    font-size: 32px;
+    line-height: 52px;
+  }
+  .img-c{
+    width: 50%;
+    padding-top: 50%;
+  }
+  main .pagination li{
+    display: none;
+    visibility: hidden;
+    &.prev,
+    &.next{
+      display: block;
+      visibility: visible;
+    }
+  }
+  .product_block{
+    margin-bottom: 26px;
+  }
+  .product_img,
+  .attendant_block{
+    width: 100%;
+  }
+  .table_block td:first-child, 
+  .table_block th:first-child{
+    box-shadow: none;
   }
 }
 @media only screen and (max-width : 600px) {
@@ -1016,6 +1118,27 @@
     padding-left: 18px;
     padding-right: 18px;
   }
+  .text_col2 .col_item{
+    width: 100%;
+  }
+  .col2{
+    columns: 1;
+  }
+  .catalog_item .caption{
+    padding: 20px 20px 46px;
+    min-height: 100px;
+  }
+  .title, h1{
+    font-size: 30px;
+    line-height: 50px;
+  }
+  .contacts_item{
+    width: 100%;
+  }
+  .table_block td:first-child, 
+  .table_block th:first-child{
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  }
 }
 @media only screen and (max-width : 540px) {
   .category_item.bottles{
@@ -1087,6 +1210,10 @@
       }
     }
   }
+  .filters .field{
+    padding: 0 0 12px;
+    width: 100%;
+  }
 }
 @media only screen and (max-width : 480px) {
   .catalog_search .field{
@@ -1149,6 +1276,27 @@
   }
   .news_dots .slick-dots{
     left: 13px;
+  }
+  .catalog_item {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+  .field_block .field{
+    width: 100%;
+  }
+  #map{
+    height: 500px;
+  }
+  .filters .field{
+    width: 100%; 
+  }
+  main .pagination li.next .btn, 
+  main .pagination li.prev .btn{
+    font-size: 0;
+    width: 48px;
+    padding: 0;
+    background-position: center;
   }
 }
 @media only screen and (max-width : 360px) {
