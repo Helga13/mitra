@@ -325,7 +325,7 @@ $(document).ready(function () {
     }
   });
   var dataPlaceholder = $('.js-size').attr('data-placeholder');
-  console.log(dataPlaceholder);
+//  console.log(dataPlaceholder);
   $('.select2-search__field').attr('placeholder', dataPlaceholder);
   $('.js-size').on('select2:open', function (e) {
     $('.select2-search input').prop('focus',false);
@@ -472,7 +472,6 @@ $(document).ready(function () {
       let x = $(this).offset().left
       let y = $(this).offset().top
 
-
       $(".active").not($(this)).remove()
       let copy = $(this).clone();
       copy.insertAfter($(this)).height(h).width(w).delay(500).addClass("active")
@@ -575,9 +574,25 @@ $(document).ready(function () {
     $(this).next().slideToggle(300);
   });
   
+  
+  var feedbackText = $('.feedback_text').text();
+//  console.log(feedbackText);
   if($(window).width() < 901) {
-    $('.more_contacts').text('Свяжитесь с нами');
+    $('.more_contacts').text(feedbackText);
   }
+  
+  var sectionsText = $('.sections_text').text();
+//  console.log(sectionsText);
+  if($(window).width() < 1101) {
+    $('.menu_block .more').text(sectionsText);
+  }
+
+  $(window).resize(function() {
+    updateNav();
+    if($(window).width() < 1101) {
+      $('.menu_block .more').text(sectionsText);
+    }
+});
   
   // tabs
   $('.js-tabs').each(function () {
@@ -700,17 +715,6 @@ function updateNav() {
 }
 
 // Window listeners
-
-if($(window).width() < 1101) {
-  $('.menu_block .more').text('Разделы сайта');
-}
-
-$(window).resize(function() {
-  updateNav();
-  if($(window).width() < 1101) {
-    $('.menu_block .more').text('Разделы сайта');
-  }
-});
 
 $btn.on('click', function(e) {
   e.preventDefault();

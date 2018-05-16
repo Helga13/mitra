@@ -703,6 +703,12 @@ header{
   background: url('../img/icons/i_mail.png') left center no-repeat;
 }
 
+.sections_text,
+.feedback_text{
+  display: none;
+  visibility: hidden;
+}
+
 /* footer */
 
 footer{
