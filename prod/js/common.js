@@ -371,12 +371,6 @@ $(document).ready(function () {
   });
   
   var feed = $('.slider-for');
-  $(".yourTrigger").click(function (e) {
-    e.preventDefault();
-    slideIndex = $(this).attr('data-text');
-    feed.slick('slickGoTo', slideIndex, true);
-  });
-//  feed.slick();
   
   // tabs
   $('.js-tabs').each(function () {
