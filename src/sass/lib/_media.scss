@@ -1139,6 +1139,15 @@
   .table_block th:first-child{
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
   }
+  .search_row .img_result{
+    display: block;
+    margin: 0;
+    margin-bottom: 16px;
+  }
+  .search_row .attendant_block{
+    width: 100%;
+    padding: 0;
+  }
 }
 @media only screen and (max-width : 540px) {
   .category_item.bottles{
